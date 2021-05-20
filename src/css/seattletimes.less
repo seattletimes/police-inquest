@@ -31,7 +31,7 @@ body {
 
 main {
   display: block;
-  max-width: 1020px;
+  max-width: 960px;
   margin: auto;
   border-top: 1px solid @df-border-gray;
   border-bottom: 1px solid @df-border-gray;
@@ -47,6 +47,7 @@ main {
 
 p {
   margin-bottom: 0;
+  font-size: 17px;
 }
 
 a {
@@ -80,6 +81,8 @@ h1 {
   line-height: 30 / 28;
   letter-spacing: -0.5px;
   text-align: center;
+  font-family: 'Tinos', serif;
+  font-weight: 700;
 
   @media @tablet {
     font-size: 28px;
@@ -97,7 +100,10 @@ h2 {
   line-height: @df-line-base;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 10px;
+  margin: 0;
+  font-family: 'Tinos', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
 
   @media @mobile {
     font-size: 18px;
@@ -121,17 +127,19 @@ h3 {
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
   font-weight: 600;
   line-height: 24 / 16;
-  margin: @df-line-base/2 0 0 0;
+  // margin: @df-line-base/2 0 0 0;
+  font-family: 'Tinos', serif;
+  font-style: italic;
+  margin: 0 0 30px;
 
   @media @mobile {
     font-size: 18px;
   }
 }
-
 
 //common style elements
 .byline {

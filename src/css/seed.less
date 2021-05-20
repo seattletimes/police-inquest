@@ -1,8 +1,11 @@
 @import "seattletimes";
-// @import "bc-preroll";
+.line {
+    border-bottom: 4px solid black;
+    max-width: 35%;
+    margin: 0 auto 15px;
+}
 
 .hidden-mobile {
-
   @media @mobile {
     display: none;
   }
@@ -28,7 +31,7 @@
   position: relative;
   width: 60px;
   height: 14px;
-  background-color: black;
+  background-color: @df-dark-gray;
   border-radius: 8px;
   text-align: center;
   cursor: pointer;
@@ -51,8 +54,9 @@
 .gallery-wrapper {
     overflow: hidden;
     // white-space: nowrap;
-    border: 1px solid @df-light-gray;
+    border: 2px dashed black;
     border-radius: 5px;
+    background-color: #e0e0e0;
 
     @media @mobile {
     overflow-x: scroll;
@@ -71,7 +75,7 @@
     // width: auto;
     // padding: 5px;
 
-    max-width: 60%;
+    max-width: 50%;
     padding: 2rem;
     // margin-bottom: 1rem;
     flex-basis: 80%;
@@ -80,8 +84,8 @@
     flex-wrap: wrap;
     // border: 1px solid @df-middle-gray;
     border-radius: 5px;
-    margin: 5px;
-    background-color: @df-footer-gray;
+    margin: 20px;
+    background-color: white;
 
     @media @mobile {
       max-width: 92%;
