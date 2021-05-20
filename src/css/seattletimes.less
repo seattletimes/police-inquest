@@ -48,6 +48,10 @@ main {
 p {
   margin-bottom: 0;
   font-size: 17px;
+
+  @media @mobile {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -77,17 +81,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 28px;
-  line-height: 30 / 28;
-  letter-spacing: -0.5px;
+  font-size: 36px;
+  // line-height: 30 / 28;
   text-align: center;
   font-family: 'Tinos', serif;
   font-weight: 700;
+  letter-spacing: 1px;
 
   @media @tablet {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 46 / 42;
-    letter-spacing: -1px;
   }
 
   @media @darkMode {
@@ -96,7 +99,7 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 34px;
   line-height: @df-line-base;
   text-align: center;
   text-transform: uppercase;
@@ -127,7 +130,7 @@ h3 {
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   font-weight: 600;
   line-height: 24 / 16;
@@ -163,10 +166,11 @@ h4 {
   text-align: center;
 }
 .graphic-chatter {
-  font-family: @df-sans;
-  font-size: 18px;
+  // font-family: @df-sans;
+  font-size: 17px;
   font-weight: normal;
-  text-align: center;
+  // text-align: center;
+  padding-bottom: 20px;
 }
 .source-container {
   margin-top: 10px;
