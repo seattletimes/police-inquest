@@ -31,13 +31,22 @@ body {
 
 main {
   display: block;
+  max-width: 1020px;
+  margin: auto;
+  border-top: 1px solid @df-border-gray;
+  border-bottom: 1px solid @df-border-gray;
+
+  &.interactive {
+    padding: 20px 10px;
+    margin: 20px auto;
+    border-top: 1px solid @df-light-gray;
+    border-bottom: 1px solid @df-light-gray;
+    font-family: @df-sans;
+  }
 }
-.interactive {
-  padding: 10px;
-  margin: 20px auto;
-  border-top: 1px solid @df-light-gray;
-  border-bottom: 1px solid @df-light-gray;
-  font-family: @df-sans;
+
+p {
+  margin-bottom: 0;
 }
 
 a {
@@ -70,6 +79,7 @@ h1 {
   font-size: 28px;
   line-height: 30 / 28;
   letter-spacing: -0.5px;
+  text-align: center;
 
   @media @tablet {
     font-size: 28px;
@@ -83,7 +93,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 32px;
   line-height: @df-line-base;
   text-align: center;
   text-transform: uppercase;
@@ -93,6 +103,7 @@ h2 {
     font-size: 18px;
   }
 }
+
 h3 {
   font-size: 16px;
   line-height: 23 / 22;
@@ -110,10 +121,15 @@ h3 {
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 24px;
+  text-align: center;
   font-weight: 600;
   line-height: 24 / 16;
   margin: @df-line-base/2 0 0 0;
+
+  @media @mobile {
+    font-size: 18px;
+  }
 }
 
 
